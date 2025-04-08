@@ -15,5 +15,4 @@ messages = [
 ]
 
 result = chat_model.predict_messages(messages)
-
 print(result)
