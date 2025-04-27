@@ -9,7 +9,7 @@ api_key: str = os.getenv("OPENAI_API_KEY")
 
 chat_model: ChatOpenAI = ChatOpenAI(openai_api_key=api_key)
 
-template: str = "You are a helpful assistant that rtanslates {input_language} to {output_language}"
+template: str = "You are a helpful assistant that translates {input_language} to {output_language}"
 human_template: str = "{text}"
 
 chat_prompt: ChatPromptTemplate = ChatPromptTemplate.from_messages([
